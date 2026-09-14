@@ -1,0 +1,6 @@
+{
+  "name": "SwasthyaSetuDesk",
+  "description": "ABDM & Bhashini-powered hospital kiosk supporting all 22 official Indian languages, AYUSH & Allopathic history taking, OCR document digitization, and FHIR clinical summaries.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

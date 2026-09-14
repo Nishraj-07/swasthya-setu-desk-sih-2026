@@ -1,0 +1,228 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { BhashiniLanguage } from './types';
+import { getLocalizedUI, LocalizedUIStrings } from './locales';
+
+export { getLocalizedUI };
+export type { LocalizedUIStrings };
+
+/**
+ * 22 Official Scheduled Indian Languages under the Eighth Schedule + English
+ * Supported natively by Digital India BHASHINI Voice and Language Engine
+ */
+export const BHASHINI_22_LANGUAGES: BhashiniLanguage[] = [
+  {
+    code: 'hi',
+    name: 'Hindi',
+    nativeName: 'हिन्दी',
+    speechCode: 'hi-IN',
+    script: 'Devanagari',
+    region: 'North & Central India',
+    isOfficial22: true,
+  },
+  {
+    code: 'en',
+    name: 'English (Indian)',
+    nativeName: 'English',
+    speechCode: 'en-IN',
+    script: 'Latin',
+    region: 'Pan-India',
+    isOfficial22: true,
+  },
+  {
+    code: 'mr',
+    name: 'Marathi',
+    nativeName: 'मराठी',
+    speechCode: 'mr-IN',
+    script: 'Devanagari',
+    region: 'Maharashtra & Western India',
+    isOfficial22: true,
+  },
+  {
+    code: 'ta',
+    name: 'Tamil',
+    nativeName: 'தமிழ்',
+    speechCode: 'ta-IN',
+    script: 'Tamil',
+    region: 'Tamil Nadu & Puducherry',
+    isOfficial22: true,
+  },
+  {
+    code: 'te',
+    name: 'Telugu',
+    nativeName: 'తెలుగు',
+    speechCode: 'te-IN',
+    script: 'Telugu',
+    region: 'Andhra Pradesh & Telangana',
+    isOfficial22: true,
+  },
+  {
+    code: 'bn',
+    name: 'Bengali',
+    nativeName: 'বাংলা',
+    speechCode: 'bn-IN',
+    script: 'Bengali-Assamese',
+    region: 'West Bengal & Tripura',
+    isOfficial22: true,
+  },
+  {
+    code: 'gu',
+    name: 'Gujarati',
+    nativeName: 'ગુજરાતી',
+    speechCode: 'gu-IN',
+    script: 'Gujarati',
+    region: 'Gujarat & UTs',
+    isOfficial22: true,
+  },
+  {
+    code: 'kn',
+    name: 'Kannada',
+    nativeName: 'ಕನ್ನಡ',
+    speechCode: 'kn-IN',
+    script: 'Kannada',
+    region: 'Karnataka',
+    isOfficial22: true,
+  },
+  {
+    code: 'ml',
+    name: 'Malayalam',
+    nativeName: 'മലയാളം',
+    speechCode: 'ml-IN',
+    script: 'Malayalam',
+    region: 'Kerala & Lakshadweep',
+    isOfficial22: true,
+  },
+  {
+    code: 'pa',
+    name: 'Punjabi',
+    nativeName: 'ਪੰਜਾਬੀ',
+    speechCode: 'pa-IN',
+    script: 'Gurmukhi',
+    region: 'Punjab & Chandigarh',
+    isOfficial22: true,
+  },
+  {
+    code: 'or',
+    name: 'Odia',
+    nativeName: 'ଓଡ଼ିଆ',
+    speechCode: 'or-IN',
+    script: 'Odia',
+    region: 'Odisha',
+    isOfficial22: true,
+  },
+  {
+    code: 'ur',
+    name: 'Urdu',
+    nativeName: 'اردو',
+    speechCode: 'ur-IN',
+    script: 'Perso-Arabic (Nastaliq)',
+    region: 'Pan-India',
+    isOfficial22: true,
+  },
+  {
+    code: 'as',
+    name: 'Assamese',
+    nativeName: 'অসমীয়া',
+    speechCode: 'as-IN',
+    script: 'Assamese',
+    region: 'Assam',
+    isOfficial22: true,
+  },
+  {
+    code: 'sa',
+    name: 'Sanskrit',
+    nativeName: 'संस्कृतम्',
+    speechCode: 'sa-IN',
+    script: 'Devanagari',
+    region: 'Pan-India (Traditional/Classical)',
+    isOfficial22: true,
+  },
+  {
+    code: 'ne',
+    name: 'Nepali',
+    nativeName: 'नेपाली',
+    speechCode: 'ne-IN',
+    script: 'Devanagari',
+    region: 'Sikkim & West Bengal',
+    isOfficial22: true,
+  },
+  {
+    code: 'ma',
+    name: 'Maithili',
+    nativeName: 'मैथिली',
+    speechCode: 'hi-IN',
+    script: 'Devanagari / Mithilakshar',
+    region: 'Bihar & Jharkhand',
+    isOfficial22: true,
+  },
+  {
+    code: 'ks',
+    name: 'Kashmiri',
+    nativeName: 'कॉशुर / كٲشُر',
+    speechCode: 'ks-IN',
+    script: 'Perso-Arabic / Devanagari',
+    region: 'Jammu & Kashmir',
+    isOfficial22: true,
+  },
+  {
+    code: 'kok',
+    name: 'Konkani',
+    nativeName: 'कोंकणी',
+    speechCode: 'kok-IN',
+    script: 'Devanagari / Romi',
+    region: 'Goa & Coastal Karnataka',
+    isOfficial22: true,
+  },
+  {
+    code: 'mni',
+    name: 'Manipuri (Meitei)',
+    nativeName: 'মৈতৈলোন্',
+    speechCode: 'mni-IN',
+    script: 'Meitei Mayek / Bengali',
+    region: 'Manipur',
+    isOfficial22: true,
+  },
+  {
+    code: 'brx',
+    name: 'Bodo',
+    nativeName: 'बर’',
+    speechCode: 'brx-IN',
+    script: 'Devanagari',
+    region: 'Assam (Bodoland)',
+    isOfficial22: true,
+  },
+  {
+    code: 'doi',
+    name: 'Dogri',
+    nativeName: 'डोगरी',
+    speechCode: 'doi-IN',
+    script: 'Devanagari',
+    region: 'Jammu & Kashmir, Himachal',
+    isOfficial22: true,
+  },
+  {
+    code: 'sat',
+    name: 'Santali',
+    nativeName: 'ᱥᱟᱱᱛᱟᱲᱤ',
+    speechCode: 'sat-IN',
+    script: 'Ol Chiki / Devanagari',
+    region: 'Jharkhand, Odisha, West Bengal',
+    isOfficial22: true,
+  },
+  {
+    code: 'sd',
+    name: 'Sindhi',
+    nativeName: 'سنڌي / सिंधी',
+    speechCode: 'sd-IN',
+    script: 'Perso-Arabic / Devanagari',
+    region: 'Pan-India, Gujarat, Maharashtra',
+    isOfficial22: true,
+  },
+];
+
+export function getLocalizedStrings(langCode: string): LocalizedUIStrings {
+  return getLocalizedUI(langCode);
+}
